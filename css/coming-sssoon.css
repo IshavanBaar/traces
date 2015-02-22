@@ -40,6 +40,14 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
     outline : 0;
 }
 
+#mcMessage{
+color: white;
+font-style: oblique;
+font-weight: 100;
+padding-left: 10px;
+padding-top: 10px;
+}
+
 /*           Font Smoothing      */
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, .navbar, .brand, .btn-simple{

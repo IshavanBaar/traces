@@ -8,13 +8,14 @@
     <meta name="viewport" content="width=device-width" />
     
     <title>Traces</title>
-    <link rel="shortcut icon" href="favicon.ico">
     <link href="css/bootstrap.css" rel="stylesheet" />
 	<link href="css/coming-sssoon.css" rel="stylesheet" />  
     
     <!--     Fonts     -->
     <link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Grand+Hotel' rel='stylesheet' type='text/css'>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
   
 </head>
 
@@ -79,14 +80,13 @@
                 </h5>
                 <div class="row">
                     <div class="col-md-4 col-md-offset-4 col-sm6-6 col-sm-offset-3 ">
-                        <form class="form-inline" role="form">
+                        <form id="mc-form" class="form-inline" role="form">
                           <div class="form-group">
-                            <label class="sr-only" for="exampleInputEmail2">Email address</label>
-                            <input type="email" class="form-control transparent" placeholder="Your email here...">
+                            <input id="mc-email" type="email" class="form-control transparent" placeholder="Your email here...">
                           </div>
                           <button type="submit" class="btn btn-warning btn-fill">Notify Me</button>
-                        </form>
-
+                          <label for="mc-email" id="mcMessage"></label>
+                        </form>                    
                     </div>
                 </div>
             </div>
@@ -99,6 +99,18 @@
     </div>
  </div>
 </body>
-   <script src="js/jquery-1.10.2.js" type="text/javascript"></script>
-	<script src="js/bootstrap.min.js" type="text/javascript"></script>
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="http://getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
+
+    <script src="js/jquery.ajaxchimp.js"></script>
+    <script src="js/jquery.ajaxchimp.langs.js"></script>
+    <script type="text/javascript">
+
+      $('#mc-form').ajaxChimp({
+          url: 'http://exploretraces.us10.list-manage.com/subscribe/post?u=9079c394f0b1907948e4fb7c5&amp;id=bc954f3488'
+      });
+
+    </script>
+
 </html>
