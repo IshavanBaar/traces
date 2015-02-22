@@ -719,15 +719,19 @@ h1 small, h2 small, h3 small, h1 .small, h2 .small, h3 .small {
     width: 60px
 }
 
+.subscribe {
+margin-bottom: 62px;
+}
+
 .main .logo {
-    color: #FFFFFF;
-    font-size: 56px;
-    font-weight: 300;
-    position: relative;
-    text-align: center;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.33);
-    margin-top: 230px;
-    z-index: 3;
+	color: #FFFFFF;
+	font-size: 56px;
+	font-weight: 300;
+	position: relative;
+	text-align: center;
+	text-shadow: 0 0 10px rgba(0, 0, 0, 0.33);
+	margin-top: 175px;
+	z-index: 3;
 }
 
 .main .logo.cursive{
